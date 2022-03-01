@@ -1,0 +1,39 @@
+// @package journaltheme
+=animate($attr, $time)
+	-webkit-transition: $attr $time ease
+	-moz-transition: $attr $time ease
+	-ms-transition: $attr $time ease
+	-o-transition: $attr $time ease
+	transition: $attr $time ease
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+=shadow($opacity)
+	-webkit-box-shadow: 0px 0px 20px -1px rgba(50, 50, 50, $opacity)
+	-moz-box-shadow: 0px 0px 20px -1px rgba(50, 50, 50, $opacity)
+	box-shadow: 0px 0px 20px -1px rgba(50, 50, 50, $opacity)
+=transform($val)
+	-webkit-transform: $val
+	-moz-transform: $val
+	-ms-transform: $val
+	-o-transform: $val
+	transform: $val
+=text-shadow()
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4)
+=box-shadow()
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.25)
+=granient-background()
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%)
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.6) 100%)
+	background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.6) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 )
+=full-width()
+	width: 100%
+	height: auto
+@keyframes spin
+	from
+		transform: rotate(360deg)
+	to
+		transform: rotate(0deg)

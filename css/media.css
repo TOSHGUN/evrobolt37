@@ -1,0 +1,49 @@
+@media only screen and (max-width : 1200px) {}
+
+@media only screen and (max-width : 991px) {
+	.ik-map .ik-contact-card { margin-left: 20px; }
+}
+
+@media only screen and (max-width : 768px) {
+	.top-heading h1 { font-size: 55px; }
+	.top-heading span.descr { font-size: 26px; }
+	.nav-main li a { font-size: 20px; }
+	
+	.sec-advantages .instkrep-icon { font-size: 75px; }
+	.sec-advantages .our-adv { font-size: 14px; }
+	
+	.footer-contacts-info .cc-address, .footer-contacts-info .cc-phone, .footer-contacts-info .cc-worktime, .footer-contacts-info .cc-worktime-days, .footer-contacts-info .cc-email { font-size: 15px; }
+	
+	.sec-advantages .our-adv { margin-bottom: 35px; }
+	.full-descr { width: 90%; }
+}
+
+@media only screen and (max-width : 610px) {
+	.top-heading h1 { font-size: 45px; }
+	.top-heading span.descr { font-size: 20px; }
+	.nav-main li a { font-size: 18px; }
+	
+	.instkrep-contact-form { padding-left: 10px; padding-right: 10px; }
+}
+
+@media only screen and (max-width : 480px) {
+	.top-heading h1 { font-size: 38px; }
+	.nav-main li a { font-size: 16px; }
+	
+	.sec-advantages .instkrep-icon { font-size: 55px; }
+	.sec-advantages .our-adv { font-size: 12px; }
+	
+	.full-descr .section-heading { font-size: 18px; }
+	.full-descr p { font-size: 16px; }
+	.full-descr ul { font-size: 14px; }
+
+	.footer-contacts-info .cc-address, .footer-contacts-info .cc-phone, .footer-contacts-info .cc-worktime, .footer-contacts-info .cc-worktime-days, .footer-contacts-info .cc-email { font-size: 13px; }
+
+}
+
+@media only screen and (max-width : 380px) {
+	.nav-main li a { font-size: 12px; }
+	
+	.sec-advantages .instkrep-icon { font-size: 50px; }
+	.sec-advantages .our-adv { font-size: 10px; }
+}

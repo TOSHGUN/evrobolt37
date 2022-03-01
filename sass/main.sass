@@ -1,0 +1,366 @@
+//	================
+//		VARIABLES
+//	================
+@import 'base/variables'
+//	================
+//		MIXINS
+//	================
+@import 'base/mixins'
+*
+	border: 0 none
+	outline: none
+body
+	font-size: 14px
+	font-family: $font-reg
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a
+	color: $text-color
+	font-family: $font-reg
+
+//	==============
+//		GENERIC
+//	==============
+.hidden
+	display: none
+.background-image
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+.btn-round
+	+border-radius(25px)
+.shadow-box
+	+shadow(0.2)
+	overflow: hidden
+
+.table
+	display: table
+.table-cell
+	display: table-cell
+	height: 100%
+	width: 50%
+
+.box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	flex-wrap: wrap
+	align-content: stretch
+	.column
+		padding: 0 15px 15px
+
+
+.sec-advantages,
+.sec-goods,
+.sec-contacts
+	margin: 0
+	padding: 30px 0
+	h2
+		font-family: $font-reg
+		font-weight: 500
+		font-size: 26px
+.section-heading
+	display: inline-block
+	font-family: $font-reg
+	font-size: 26px
+	font-weight: 500
+	margin: 0 0 25px
+	padding: 15px 0 9px
+	position: relative
+	text-transform: uppercase
+	&::after
+		content: ""
+		position: absolute
+		display: block
+		left: 0
+		right: 0
+		bottom: 0
+		height: 2px
+		background: $blue-alpha
+		width: 50px
+
+//	===================
+//		HEADER STYLE
+//	===================
+.main-head
+	margin: 0
+	padding: 25px 0 5px
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $blue-alpha
+.top-phone-container
+	display: inline-block
+	margin: 0
+	padding: 0
+	position: relative
+.top-phone-container a
+	display: block
+.top-phone
+	color: $white
+	font-family: $font-reg
+	font-size: 24px
+	text-decoration: none
+	+animate(all, 320px)
+	&:hover,
+	&:focus,
+	&:active
+		color: $white
+		text-decoration: none
+		&::after
+			opacity: 1
+	&::after
+		content: ""
+		position: absolute
+		display: block
+		left: 0
+		right: 0
+		bottom: 0
+		height: 1px
+		background: $white
+		opacity: 0.5
+.top-heading
+	color: $white
+	strong
+		color: $red
+	h1
+		color: $white
+		font-family: $font-reg
+		font-weight: 500
+		font-size: 60px
+		margin-top: 100px
+		margin-bottom: 5px
+		text-transform: uppercase
+	span.descr
+		font-family: $font-reg
+		font-size: 30px
+.nav-main
+	display: table
+	margin: 110px auto 0
+	li
+		a
+			border-radius: 13px
+			color: $white
+			font-family: $font-reg
+			font-size: 24px
+			+animate(all, 320ms)
+			&:hover,
+			&:focus,
+			&:active
+				background-color: $white
+				color: $blue
+
+//	=======================
+//		ADVANTAGES STYLE
+//	=======================
+.sec-advantages
+	padding-top: 75px
+	.instkrep-icon
+		display: block
+		font-size: 120px
+		margin: 0 0 45px 0
+	.our-adv
+		font-family: $font-reg
+		font-size: 20px
+
+//	===================
+//		GOODS SECTION STYLE
+//	===================
+.goods-item
+	cursor: pointer
+
+	//display: flex
+	//height: auto
+	//align-items: center
+	//justify-content: normal
+	//flex-direction: column
+	.goods-item-preview
+		height: 160px
+		width: 100%
+	p
+		display: block
+		font-family: $font-reg
+		font-size: 19px
+		line-height: 1.1em
+		margin: 20px 0
+		text-align: center
+		text-decoration: none
+		word-wrap: break-word
+	a
+		&:focus
+			outline: 0
+	&:hover,
+	&:focus,
+	&:active
+		.goods-item-preview
+			border: 2px solid $blue
+		a
+			color: $text-color
+			text-decoration: underline
+
+.pic-descr
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.8)
+	padding: 0 5px
+	text-align: center
+	//transition: all .5s
+	opacity: 0
+	vertical-align: middle
+	&:hover
+		opacity: 1
+		cursor: pointer
+		padding-top: 10px
+	h3
+		margin: 6%
+	p
+		text-align: center
+		margin: 0
+	a
+		display: inline-block
+		margin-top: 10px
+		padding: 5px 15px
+		text-decoration: none
+		&:hover
+			background-color: rgba(255,255,255,.3)
+.full-descr
+	background-color: #fff
+	border-radius: 15px
+	width: 75%
+	height: 100%
+	padding: 15px 50px 60px
+	margin: 25px auto
+	position: relative
+	.section-heading
+		margin-bottom: 30px
+	.mfp-close
+		color: $blue
+		position: absolute
+	p
+		font-family: $font-reg
+		font-size: 22px
+		margin: 10px 0
+	img
+		width: 100%
+	ul
+		font-family: $font-reg
+		font-size: 18px
+		text-align: left
+//	===================
+//		CONTACTS SECTION STYLE
+//	===================
+.ik-map
+	color: $blue
+	height: 500px
+	overflow: hidden
+	padding: 15px 0
+	.ik-contact-card
+		background-color: $blue-alpha-map
+		border: 3px solid $blue-map
+		display: inline-block
+		margin: 25px 0px 0px 60px
+		padding: 50px 20px 30px
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 888
+		+border-radius(5px)
+		.contact-line
+			margin-bottom: 35px
+		.cc-address,
+		.cc-phone,
+		.cc-worktime,
+		.cc-worktime-days,
+		.cc-email
+			color: $blue
+			font-family: $font-reg
+			font-size: 20px
+			margin-bottom: 1px
+			.cc-bold
+				font-weight: bold
+
+//	===================
+//		FOOTER STYLE
+//	===================
+.main-footer
+	background-color: $blue
+	margin: 0
+	padding: 40px 0 30px
+.any-quest
+	color: $white
+	font-family: $font-reg
+	font-weight: 500
+	font-size: 26px
+	margin: 0
+	padding: 0
+	text-transform: uppercase
+.form-descr
+	color: $white
+	font-family: $font-reg
+	font-size: 20px
+	margin: 0
+	padding: 0
+.instkrep-contact-form
+	margin: 0
+	padding: 25px 40px 0
+	.form-control
+		border-radius: 15px
+		font-family: $font-reg
+		font-size: 18px
+	.instkrep-form-group
+		resize: vertical
+	.btn-instkrep-form
+		border-radius: 15px
+		background-color: $white
+		color: $blue
+		font-family: $font-reg
+		font-size: 18px
+		padding: 8px 30px
+		&:hover,
+		&:focus,
+		&:active
+			background-color: $white-alpha
+			color: $white
+
+.footer-contacts-info
+	color: $white
+	font-family: $font-reg
+	font-weight: 500
+	font-size: 18px
+	margin-top: 70px
+	.cc-address,
+	.cc-phone,
+	.cc-worktime,
+	.cc-worktime-days,
+	.cc-email
+		color: $white
+		font-family: $font-reg
+		//font-weight: 500
+		font-size: 18px
+		.cc-bold
+			font-weight: bold
+.cc-phone a
+	display: block
+.footer-logo
+	color: $white
+	font-family: $font-reg
+	font-weight: 500
+	font-size: 25px
+	margin: 90px 0 30px
+	word-wrap: break-word
+.footer-contacts-info a
+	color: $white
