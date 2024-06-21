@@ -22,6 +22,11 @@ a {
   color: #333;
   font-family: "Gotham Pro"; }
 
+.whatsapp, .telegram, .viber{
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+
 .hidden {
   display: none; }
 
